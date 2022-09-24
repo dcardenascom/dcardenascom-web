@@ -1,0 +1,41 @@
+$color__blue: #008BFF
+$color__blue-2: #D2E9FD
+$color__grey: #646464
+$color__grey-2: #eeeeee
+$color__grey-3: #f5f5f5
+$color__black: #535353
+
+$max-width: 1200px
+$max-mobile: 776px
+$max-tablet: 998px
+
+@mixin for-phone
+  @media screen and (max-width: $max-mobile)
+    @content
+
+@mixin for-tablet
+  @media screen and (min-width: $max-mobile) and (max-width: $max-tablet)
+    @content
+
+@mixin for-desktop
+  @media (min-width: 993px)
+    @content
+
+.container__full
+  margin: 0px !important
+  padding: 0px !important
+  width: 100%
+  max-width: 100%
+
+.layout__block
+  max-width: $max-width
+  margin: 0 auto
+
+body
+  font-family: Roboto
+  color: $color__black
+  background: linear-gradient(rgba(0, 139, 255, 0.97), rgba(0, 139, 255, 0.97)), url('/portada.jpeg')
+  height: 100%
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
