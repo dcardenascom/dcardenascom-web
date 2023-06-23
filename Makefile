@@ -1,5 +1,5 @@
 start:
-	yarn generate
+	yarn generate && yarn start
 install:
 	yarn install --ignore-engines
 restart:
