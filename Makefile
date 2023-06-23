@@ -1,7 +1,7 @@
 dev:
 	yarn start
 start:
-	yarn generate
+	nuxt build
 install:
 	yarn install --ignore-engines
 restart:
