@@ -5,10 +5,10 @@
         <img src="~/assets/img/terminal.png">
       </v-flex>
       <v-flex v-if="!state.isMobile" :xs9="state.isDesktop" :xs12="state.isTalbet" class="Hero__subtitle">
-        Desarrollo de aplicaciones, servicios y todo tipo de software a medida para cualquier sector. Máxima calidad en el diseño de arquitecturas y en la implementación de soluciones estables, bajo control, a prueba de alto tráfico de usuarios y con el dinamismo suficiente como para seguir adaptándose cada día.
+        Máxima calidad en el diseño de arquitecturas y en la implementación de soluciones estables, bajo control, a prueba de alto tráfico de usuarios y con el dinamismo suficiente como para seguir adaptándose cada día.
       </v-flex>
       <v-flex v-if="state.isMobile" xs12 class="Hero__subtitle">
-        Desarrollo de aplicaciones, servicios y todo tipo de software a medida para cualquier sector.
+        Arquitectura de aplicaciones, servicios y todo tipo de software a medida para cualquier sector.
       </v-flex>
       <v-flex v-for="(card, index) in cards" :key="index" :xs4="!state.isMobile" xs12="state.isMobile" class="Hero__card-block">
         <v-card outlined flat hover>

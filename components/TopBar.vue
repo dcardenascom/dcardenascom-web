@@ -7,7 +7,7 @@
         </a>
       </v-flex>
       <v-flex v-if="!state.isMobile" class="TopBar__slogan">
-        <span>Technical direction | Project management | Software development</span>
+        <span>Technical direction | Project management</span>
       </v-flex>
       <v-flex v-if="state.isDesktop" grow class="TopBar__profile">
         <v-avatar height="70" width="70">
